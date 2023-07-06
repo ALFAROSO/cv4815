@@ -1,0 +1,257 @@
+html{
+    font-family: 'Open Sans',    sans-serif;
+    font-family: 'Exo 2',    sans-serif;
+    background-color: #FBF5F3;
+    font-size: large;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #FBF5F3;
+    color: #FFFFFF;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+}
+nav{
+    padding: 1rem;
+}
+.pi2{
+    display: none;
+}
+nav > ul {
+    list-style-type: none;
+    padding: 1rem;
+    margin: 1rem;  
+    background-color: #427AA1;
+    border-radius: 20px;
+}
+
+nav > ul > li > a{
+    text-decoration: none;
+    color: #FBF5F3; 
+    gap: 1rem;  
+    margin: 1rem;
+    padding: 1rem;
+    font-size: larger;
+}
+
+nav > ul > li{
+    padding: 0.5rem;
+    border: 1px dotted #FBF5F3;
+    background-color: #05668D;
+    border-radius: 10px;
+    padding-left: 0;
+    padding-right: 0;
+}
+
+img{
+    width: 90%;
+    padding: 1rem;
+}
+
+h1, h2 {
+    text-align: center;
+}
+h2{
+    background-color: #05668D;
+    color: #FBF5F3;
+    margin: 1rem;
+    padding: 1rem;
+    margin-left: 0;
+    margin-right: 0;
+    border-radius: 20px;
+}
+main{
+    margin: 0.5rem;
+}
+
+.education{
+    text-align: center;
+}
+
+.employment > div > h3 {
+    text-align: center;
+}
+
+.skills > div > h3 {
+    text-align: center;
+}
+
+.skills > div > ul > li{
+    list-style-type: none;
+    padding: 1rem;
+}
+.skills > div > ul{
+    padding: 0;
+}
+.skilldot{
+    text-align: center;
+    margin-top: 0;
+    padding-top: 0;
+}
+
+.employment > div > h3 {
+    text-align: center;
+}
+
+.employment > div > ul > li{
+    list-style-type: none;
+    padding: 1rem;
+}
+.employment > div > ul{
+    padding: 0;
+}
+.dot{
+    text-align: center;
+    margin-top: 0;
+    padding-top: 0;
+}
+
+footer {
+    background-color: #A5BE00;
+    border-radius: 20px;
+}
+
+.footer-wrapper > div > ul {
+    list-style-type: none;
+    text-align: center;
+    margin-left: 0;
+    margin-right: 0;
+    padding-left: 0;
+    padding-right: 0;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+}
+
+.footer-wrapper{
+    margin: 1rem;
+}
+
+.red{
+    margin-bottom: 0;
+}
+
+.red1{
+    color: #FBF5F3;
+    font-size: 35px;
+}
+
+.small{
+    display: block;
+}
+.big{
+    display: none;
+}
+.Interests > div > ul{
+    display: grid;
+    gap: 1rem;
+    text-align: center;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+button{
+    border-radius: 15%;
+    font-size: large;
+    background-color: #05668D;
+    border: 2px dotted #FBF5F3;
+    color: #FBF5F3;
+    padding: 0.5rem;
+    margin: 0.9rem;
+}
+button:hover{
+    background-color: #05668D;
+    color: #A5BE00;
+    border: 2px dashed #A5BE00;
+    padding: 0.7rem;
+    margin: 0.7rem;
+}
+
+.skills , .education, .employment, .Interests{
+    background-color: rgb(231, 231, 231);
+    border-radius: 20px;
+}
+
+/* https://coolors.co/595959-808f85-91c499-A5BE00-cfd11a */
+/* https://coolors.co/FBF5F3-0eb1d2-34e4ea-FBF5F3-05668D */
+/* https://coolors.co/fbf5f3-05668d-427aa1-679436-a5be00 */
+
+
+
+@media screen and (min-width: 600px){
+    main{
+        max-width: 800px;
+        margin: auto;
+    }
+    img{
+        max-width: 100%;
+        margin: auto;
+        display: block;
+    }
+    .pict{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+    nav > ul {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+        margin: auto;
+    }
+    nav > ul > li > a{
+        margin: 0;
+        padding: 0;
+    }
+    .red{
+        display: flex;
+        gap: 1rem;
+        justify-content: center;
+    }
+    
+    .pi{
+        display: none;
+    }
+    .pi2{
+        display: block;
+    }
+    
+    .small{
+        display: none;
+    }
+    .big{
+        display: block;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 1rem;
+        align-items: center;
+    }
+}
+
+
+@media screen and (min-width: 1100px){
+    main{
+        max-width: 800px;
+        margin: auto;
+    }
+    .employment > div > ul {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+    .Interests > div > ul{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+        text-align: center;
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+    }
+    .skills > div > ul {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+}
